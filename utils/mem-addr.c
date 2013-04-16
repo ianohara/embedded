@@ -21,4 +21,8 @@
  *   with memory addresses on embedded systems.
  */
 
+#include<stdint.h>
+typedef addr_t uint32_t;
+
 #define STRUCT_FIELD_OFFSET(struct_type, field)  ( &(((struct_type *)(0u))->field) )
+
